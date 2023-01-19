@@ -15,7 +15,7 @@ int PrintThirdNumber(int number)
 {
       if (number <100)
       {
-        Console.WriteLine("Введенное число = " + number + " --> Других цифр нет");
+        Console.WriteLine($"Введенное число = {number},  --> Других цифр нет.");
       }
       else
       {
