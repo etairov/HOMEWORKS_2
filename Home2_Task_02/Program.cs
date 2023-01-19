@@ -5,3 +5,24 @@
 //32679 -> 6
 //-----------------------------
 
+int EnterYourNumber()
+{
+    int number = new Random().Next(0, 200);
+    return number;
+}
+
+int PrintThirdNumber(int number)
+{
+      if (number <100)
+      {
+        Console.WriteLine("Введенное число = " + number + " --> Других цифр нет");
+      }
+      else
+      {
+        int result = ((number % 100) % 10);
+        Console.WriteLine($"Введенное число {number}, Третья цифра {result}.");
+      }
+      return number;
+}
+int number = EnterYourNumber();
+int result = PrintThirdNumber(number);
